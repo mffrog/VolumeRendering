@@ -1,17 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Src">
+      <UniqueIdentifier>{5201a0c5-9eec-409b-bd5c-0b2fda773fb5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Res">
+      <UniqueIdentifier>{464c1810-00b8-44b7-8ee8-4f2883b42d42}</UniqueIdentifier>
     </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Res\Shader">
+      <UniqueIdentifier>{ddc8079f-eed8-44d3-b03e-477d65fa7d95}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\VolumeRendering">
+      <UniqueIdentifier>{5143e78c-c400-4cf1-a131-356bbd66b33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\VolumeRendering\Renderer">
+      <UniqueIdentifier>{2ec19c2b-b2ea-4d57-a662-280d03f32fdd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\VolumeRendering\Renderer\Renderer.cpp">
+      <Filter>Src\VolumeRendering\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\VolumeRendering\Volume.cpp">
+      <Filter>Src\VolumeRendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Res\Shader\Simple.vert">
+      <Filter>Res\Shader</Filter>
+    </None>
+    <None Include="Res\Shader\Simple.frag">
+      <Filter>Res\Shader</Filter>
+    </None>
+    <None Include="Res\Shader\Cube.vert">
+      <Filter>Res\Shader</Filter>
+    </None>
+    <None Include="Res\Shader\Cube.frag">
+      <Filter>Res\Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\VolumeRendering\Volume.h">
+      <Filter>Src\VolumeRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\VolumeRendering\Cell.h">
+      <Filter>Src\VolumeRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\VolumeRendering\Renderer\VolumeData.h">
+      <Filter>Src\VolumeRendering\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\VolumeRendering\Types.h">
+      <Filter>Src\VolumeRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\VolumeRendering\Renderer\CameraData.h">
+      <Filter>Src\VolumeRendering\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\VolumeRendering\Renderer\Renderer.h">
+      <Filter>Src\VolumeRendering\Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
